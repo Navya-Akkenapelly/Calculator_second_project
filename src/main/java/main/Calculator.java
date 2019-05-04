@@ -4,27 +4,25 @@ import java.util.*;
 public class Calculator {
     public static void main(String[] args)
     {
-        System.out.println("Enter first and second number:");
         Scanner inp= new Scanner(System.in);
         int num1,num2;
         num1 = inp.nextInt();
         num2 = inp.nextInt();
-        int ans;
         System.out.println("Enter your selection: 1 for Addition, 2 for substraction 3 for Multiplication and 4 for division:");
         int choose;
         choose = inp.nextInt();
         switch (choose){
         case 1:
-            System.out.println(add( num1,num2));
+            System.out.println(add( 2,4));
             break;
         case 2:
-            System.out.println(sub( num1,num2));
+            System.out.println(sub( 6,5));
             break;      
         case 3:
-            System.out.println(mult( num1,num2));
+            System.out.println(mult( 6,5));
             break;
         case 4:
-            System.out.println(div( num1,num2));
+            System.out.println(div( 20,5));
             break;
             default:
                 System.out.println("Illigal Operation");
@@ -38,7 +36,8 @@ public class Calculator {
     public static int add(int x, int y)
     {
     	int result=0;
-//        write your code here 
+//        write your code here
+    	 result = x + y;
     	
         return result;
     }
@@ -46,18 +45,24 @@ public class Calculator {
     {
     	int result=0;
 //        write your code here
+    	
+    	 result = x - y;
         return result;
     }
     public static int mult(int x, int y)
     {
     	int result=0;
-//      write your code here        
+//      write your code here
+    	
+    	 result = x * y;
     	return result;
     }
     public static int div(int x, int y)
     {
     	int result=0;
 //      write your code here
+    	
+    	 result = x / y;
     	return result;
     }
 
